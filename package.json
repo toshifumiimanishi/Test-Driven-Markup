@@ -1,0 +1,15 @@
+{
+  "name": "Test-Driven-Markup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development gulp styles",
+    "build": "NODE_ENV=production gulp styles"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-variables": "^1.2.0"
+  }
+}

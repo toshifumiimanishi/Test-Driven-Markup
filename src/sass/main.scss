@@ -1,0 +1,9 @@
+%test {
+  @import "test";
+}
+
+:root {
+  @if $mode == "development" {
+    @extend %test;
+  }
+}

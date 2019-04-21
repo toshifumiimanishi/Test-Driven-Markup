@@ -1,0 +1,19 @@
+img:not([alt]) {
+  outline: 5px solid red;
+  ERROR: img 要素には、alt 属性が必須です。;
+}
+
+a[href=""] {
+  outline: 5px solid red;
+  ERROR: リンクが設定されていません。;
+}
+
+[target="_blank"]:not([rel*="noopener"]) {
+  outline: 5px solid red;
+  ERROR: フィッシング詐欺攻撃の脆弱性があります。;
+}
+
+iframe[src^="https://www.youtube.com/embed/"]:not([src*="rel=0"]) {
+  outline: 5px solid red;
+  ERROR: YouTube の関連動画を同じチャンネル内に制御されてまいせん。;
+}
