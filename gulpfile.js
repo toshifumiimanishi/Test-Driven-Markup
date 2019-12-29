@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const sassVariables = require('gulp-sass-variables');
 const sass = require('gulp-sass');
-
+sass.compiler = require('sass');
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 function styles() {

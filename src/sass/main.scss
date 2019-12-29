@@ -1,9 +1,7 @@
-%test {
-  @import "test";
-}
+@use "sass:meta";
 
 :root {
   @if $mode == "development" {
-    @extend %test;
+    @include meta.load-css("test");
   }
 }
